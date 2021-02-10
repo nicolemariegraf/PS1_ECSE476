@@ -216,7 +216,7 @@ int main(int argc, char **argv) {
 
 
           twist_cmd.linear.x=0.0; //stop moving forward
-    twist_cmd.angular.z=yaw_rate; //and start spinning in place approx 90 deg
+    twist_cmd.angular.z=yaw_rate; //and start spinning in place approx 100 deg
     timer=0.0; //reset the timer
     while(timer<(time_3_sec+.25)) {
           twist_commander.publish(twist_cmd);
